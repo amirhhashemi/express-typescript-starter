@@ -1,0 +1,33 @@
+{
+  "name": "telexam",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "prepare": "husky install",
+    "lint:staged": "lint-staged"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.31.2",
+    "@typescript-eslint/parser": "^4.31.2",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "husky": "^7.0.2",
+    "lint-staged": "^11.1.2",
+    "prettier": "^2.4.1",
+    "typescript": "^4.4.3"
+  },
+  "dependencies": {
+    "dotenv": "^10.0.0"
+  },
+  "lint-staged": {
+    "*.{ts,js,html,json}": [
+      "prettier --write",
+      "eslint --fix"
+    ]
+  }
+}
