@@ -6,6 +6,8 @@
   "scripts": {
     "dev": "nodemon --exec ts-node --transpile-only src/index.ts",
     "prepare": "husky install",
+    "format": "prettier --write",
+    "lint": "eslint --fix",
     "lint:staged": "lint-staged",
     "test:run": "jest",
     "test:watch": "jest --watch",
